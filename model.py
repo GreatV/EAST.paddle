@@ -115,7 +115,7 @@ class output(paddle.nn.Layer):
 
 class EAST(paddle.nn.Layer):
 
-    def __init__(self, pretrained=True):
+    def __init__(self, pretrained=False):
         super(EAST, self).__init__()
         self.extractor = extractor(pretrained)
         self.merge = merge()
